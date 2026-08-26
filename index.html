@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>muslim_barut.dev — portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+<!-- Boot overlay -->
+<div class="boot-screen" id="bootScreen">
+  <div class="boot-lines" id="bootLines"></div>
+</div>
+
+<div class="crt-overlay" aria-hidden="true"></div>
+
+<!-- Top bar -->
+<header class="topbar">
+  <div class="topbar-left">
+    <span class="dot dot-red"></span>
+    <span class="dot dot-yellow"></span>
+    <span class="dot dot-green"></span>
+
+    <span class="topbar-title">
+      muslim_barut@portfolio:~$ <span class="terminal-cursor">_</span>
+    </span>
+  </div>
+
+  <nav class="topbar-nav" id="topNav">
+    <button data-target="about">about</button>
+    <button data-target="skills">skills</button>
+    <button data-target="projects">projects</button>
+    <button data-target="education">education</button>
+    <button data-target="contact">contact</button>
+  </nav>
+
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<div class="mobile-nav" id="mobileNav">
+  <button data-target="about">about</button>
+  <button data-target="skills">skills</button>
+  <button data-target="projects">projects</button>
+  <button data-target="education">education</button>
+  <button data-target="contact">contact</button>
+</div>
+
+  <!-- HERO -->
+  <section class="section hero" id="hero">
+    <div class="term-block">
+      <div class="prompt-line"><span class="prompt-user">muslim_barut</span><span class="prompt-sep">:</span><span class="prompt-path">~</span><span class="prompt-dollar">$</span> <span class="typed-cmd" id="heroCmd"></span></div>
+      <div class="hero-body" id="heroBody">
+        <div class="hero-grid">
+          <div class="hero-avatar-wrap">
+            <div class="avatar-frame">
+              <img src="profile.jpg" alt="Profile photo" class="avatar-img" id="avatarImg" onerror="this.style.display='none'; document.getElementById('avatarFallback').style.display='flex';">
+              <div class="avatar-fallback" id="avatarFallback">
+                <svg viewBox="0 0 100 100" width="60%" height="60%">
+                  <circle cx="50" cy="36" r="18" fill="none" stroke="var(--accent)" stroke-width="3"/>
+                  <path d="M18 88c0-20 14-32 32-32s32 12 32 32" fill="none" stroke="var(--accent)" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="avatar-scan"></div>
+            </div>
+            <div class="status-chip"><span class="pulse-dot"></span> available for work</div>
+          </div>
+          <div class="hero-text">
+            <p class="hero-eyebrow">// Software Engineer Student</p>
+            <h1 class="hero-name">
+  <span id="heroName"></span><span class="name-cursor">_</span>
+</h1>
+            <p class="hero-tagline" id="heroBio"></p>
+
+<p class="hero-motto">
+  <span class="quote-mark">❝</span>
+  I don't learn skills to collect them. I learn skills to build solutions.
+</p>
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary" data-target="projects">view projects</a>
+              <a href="#contact" class="btn btn-outline" data-target="contact">get in touch</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint"><span>scroll</span><div class="scroll-line"></div></div>
+  </section>
+
+  <!-- ABOUT -->
+<section class="section" id="about">
+  <div class="term-block">
+
+    <div class="prompt-line">
+      <span class="prompt-user">muslim_barut</span>
+      <span class="prompt-sep">:</span>
+      <span class="prompt-path">~</span>
+      <span class="prompt-dollar">$</span>
+      cat about.md
+    </div>
+
+    <div class="reveal-body">
+
+      <h2 class="section-title">
+        <span class="title-hash">#</span> about me
+      </h2>
+
+      <details class="about-details">
+
+        <summary class="about-toggle">
+          <span>▸</span> View About Me
+        </summary>
+
+        <div class="about-content">
+
+          <p>
+            I'm Muslim Barut, an IT Maintenance student from Burundi
+            passionate about software engineering.
+          </p>
+
+          <p>
+            I enjoy building practical projects with Python, Linux, Web Development, and Git while continuously improving my problem-solving skills.
+          </p>
+
+          <p>
+            My goal is to become a Software Engineer and build useful technology that solves real-world problems.
+          </p>
+
+          <div class="about-meta">
+
+            <div class="meta-row">
+              <span class="meta-key">Name</span>
+              <span class="meta-val">Muslim Barut</span>
+            </div>
+
+            <div class="meta-row">
+              <span class="meta-key">Location</span>
+              <span class="meta-val">Burundi</span>
+            </div>
+
+            <div class="meta-row">
+              <span class="meta-key">Education</span>
+              <span class="meta-val">IT Maintenance Student</span>
+            </div>
+
+            <div class="meta-row">
+              <span class="meta-key">Goal</span>
+              <span class="meta-val">Software Engineer</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </details>
+
+    </div>
+  </div>
+</section>
+
+  <!-- SKILLS -->
+<section class="section" id="skills">
+  <div class="term-block">
+    <div class="prompt-line">
+      <span class="prompt-user">muslim_barut</span>
+      <span class="prompt-sep">:</span>
+      <span class="prompt-path">~</span>
+      <span class="prompt-dollar">$</span>
+      ls skills/ --tree
+    </div>
+
+    <div class="reveal-body">
+      <h2 class="section-title"><span class="title-hash">#</span> skills</h2>
+
+      <div class="skills-grid">
+
+        <!-- Languages -->
+        <div class="skill-card">
+          <div class="skill-card-head"><span class="skill-icon">▸</span> languages</div>
+          <ul class="skill-list">
+            <li><div class="skill-top"><span class="skill-name">Python</span><span class="skill-level">67%</span></div><span class="skill-bar"><span style="width:67%"></span></span></li>
+            <li><div class="skill-top"><span class="skill-name">HTML & CSS</span><span class="skill-level">56%</span></div><span class="skill-bar"><span style="width:56%"></span></span></li>
+            <li><div class="skill-top"><span class="skill-name">Java</span><span class="skill-level">28%</span></div><span class="skill-bar"><span style="width:28%"></span></span></li>
+            <li><div class="skill-top"><span class="skill-name">JavaScript</span><span class="skill-level">44%</span></div><span class="skill-bar"><span style="width:44%"></span></span></li>
+          </ul>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-card">
+          <div class="skill-card-head"><span class="skill-icon">▸</span> tools & frameworks</div>
+          <ul class="skill-list">
+            <li><div class="skill-top"><span class="skill-name">Git & GitHub</span><span class="skill-level">59%</span></div><span class="skill-bar"><span style="width:59%"></span></span></li>
+            <li><div class="skill-top"><span class="skill-name">LibreOffice</span><span class="skill-level">70%</span></div><span class="skill-bar"><span style="width:70%"></span></span></li>
+            <li><div class="skill-top"><span class="skill-name">VS Code / Geany</span><span class="skill-level">57%</span></div><span class="skill-bar"><span style="width:57%"></span></span></li>
+            <li><div class="skill-top"><span class="skill-name">Terminal</span><span class="skill-level">65%</span></div><span class="skill-bar"><span style="width:65%"></span></span></li>
+          </ul>
+        </div>
+
+        <!-- Platforms -->
+        <div class="skill-card">
+          <div class="skill-card-head"><span class="skill-icon">▸</span> platforms</div>
+          <ul class="skill-list">
+            <li><div class="skill-top"><span class="skill-name">Linux</span><span class="skill-level">60%</span></div><span class="skill-bar"><span style="width:60%"></span></span></li>
+            <li><div class="skill-top"><span class="skill-name">Android</span><span class="skill-level">73%</span></div><span class="skill-bar"><span style="width:73%"></span></span></li>
+            <li><div class="skill-top"><span class="skill-name">GitHub Pages</span><span class="skill-level">46%</span></div><span class="skill-bar"><span style="width:46%"></span></span></li>
+            <li><div class="skill-top"><span class="skill-name">Docker</span><span class="skill-level">33%</span></div><span class="skill-bar"><span style="width:33%"></span></span></li>
+          </ul>
+        </div>
+
+        <!-- Learning -->
+        <div class="skill-card">
+          <div class="skill-card-head"><span class="skill-icon">▸</span> currently learning</div>
+          <ul class="skill-list">
+            <li><div class="skill-top"><span class="skill-name">SQL & Databases</span><span class="skill-level">21%</span></div><span class="skill-bar"><span style="width:21%"></span></span></li>
+            <li><div class="skill-top"><span class="skill-name">Backend Development</span><span class="skill-level">29%</span></div><span class="skill-bar"><span style="width:29%"></span></span></li>
+            <li><div class="skill-top"><span class="skill-name">AI Fundamentals</span><span class="skill-level">48%</span></div><span class="skill-bar"><span style="width:48%"></span></span></li>
+            <li><div class="skill-top"><span class="skill-name">Cybersecurity</span><span class="skill-level">43%</span></div><span class="skill-bar"><span style="width:43%"></span></span></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+          
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="term-block">
+      <div class="prompt-line"><span class="prompt-user">muslim_barut</span><span class="prompt-sep">:</span><span class="prompt-path">~</span><span class="prompt-dollar">$</span> ls projects/</div>
+      <div class="reveal-body">
+        <h2 class="section-title"><span class="title-hash">#</span> projects</h2>
+        <div class="projects-grid">
+
+          <article class="project-card">
+            <div class="project-card-top">
+              <span class="project-file">portfolio/</span>
+              <span class="project-tag">HTML · CSS · JS</span>
+            </div>
+            <h3 class="project-title">Terminal Portfolio</h3>
+            <p class="project-desc">    A responsive personal portfolio inspired by the Linux terminal, built with HTML, CSS, and JavaScript.</p>
+            <div class="project-links">
+              <a href="#" class="project-link">source →</a>
+              <a href="#" class="project-link">demo →</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card-top">
+              <span class="project-file">calculator.py</span>
+              <span class="project-tag">Python</span>
+            </div>
+            <h3 class="project-title">Python Calculator</h3>
+            <p class="project-desc">A calculator application built while learning Python, using functions, conditions, and user input.</p>
+            <div class="project-links">
+              <a href="#" class="project-link">source →</a>
+              <a href="#" class="project-link">demo →</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card-top">
+              <span class="project-file">tweet_ui.py</span>
+              <span class="project-tag">Python · Pillow</span>
+            </div>
+            <h3 class="project-title">Tweet UI Generator</h3>
+            <p class="project-desc">A Python project that generates modern social media post designs using the Pillow library.</p>
+            <div class="project-links">
+              <a href="#" class="project-link">source →</a>
+              <a href="#" class="project-link">demo →</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card-top">
+              <span class="project-file">linux_notes/</span>
+              <span class="project-tag">Linux</span>
+            </div>
+            <h3 class="project-title">Linux Learning Journey</h3>
+            <p class="project-desc">A collection of terminal commands, shell practice, and Linux fundamentals documented during my learning journey.</p>
+            <div class="project-links">
+              <a href="#" class="project-link">source →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section" id="education">
+  <div class="term-block">
+    <div class="prompt-line">
+      <span class="prompt-user">muslim_barut</span>
+      <span class="prompt-sep">:</span>
+      <span class="prompt-path">~</span>
+      <span class="prompt-dollar">$</span>
+      cat education.txt
+    </div>
+
+    <div class="reveal-body">
+      <h2 class="section-title">
+        <span class="title-hash">#</span> Education & Certificates
+      </h2>
+
+      <div class="edu-card">
+        <span class="edu-year">2023 — Present</span>
+        <h3>IT Maintenance Student</h3>
+        <p>High School • Burundi</p>
+      </div>
+
+      <div class="edu-card">
+        <span class="edu-year">2026</span>
+        <h3>Python Certificate</h3>
+        <p>Mimo • Python Programming</p>
+        <a href="certificates/mimo-python.pdf" class="project-link">
+          View Certificate →
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="term-block">
+      <div class="prompt-line"><span class="prompt-user">muslim_barut</span><span class="prompt-sep">:</span><span class="prompt-path">~</span><span class="prompt-dollar">$</span> ./contact.sh</div>
+      <div class="reveal-body">
+        <h2 class="section-title">
+          <span class="title-hash">#</span> Get in Touch
+        </h2>
+
+        <p class="contact-intro">
+          I'm always open to internships, freelance opportunities, collaborations, and meaningful conversations about technology. Feel free to reach out.
+        </p>
+
+        <!-- Open button -->
+<div class="contact-details">
+  <button class="btn btn-outline btn-toggle-form" id="openForm">
+    <i class="fas fa-envelope"></i> Send Message Form
+  </button>
+</div>
+
+<!-- Popup Form -->
+<div class="contact-modal" id="contactModal">
+  <div class="contact-modal-box">
+
+    <div class="modal-header">
+      <h3>Send Message</h3>
+      <button class="close-btn" id="closeForm">&times;</button>
+    </div>
+
+    <form class="contact-form" id="contactForm">
+      <div class="form-row">
+        <label for="cf-name">name</label>
+        <input type="text" id="cf-name" placeholder="muslim_barut" required>
+      </div>
+
+      <div class="form-row">
+        <label for="cf-email">email</label>
+        <input type="email" id="cf-email" placeholder="muslim@example.com" required>
+      </div>
+
+      <div class="form-row">
+        <label for="cf-message">message</label>
+        <textarea id="cf-message" rows="5" placeholder="Type your message..." required></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-submit">
+        <span id="submitLabel">send message</span>
+      </button>
+
+      <p class="form-status" id="formStatus"></p>
+    </form>
+
+  </div>
+</div>
+
+        <div class="contact-links">           
+          <a href="mailto:muslimbarut@gmail.com" class="contact-icon" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="https://github.com/muslimbarut" target="_blank" class="contact-icon">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://bi.linkedin.com/in/muslim-b%C3%A2rut-a4a913385" target="_blank" class="contact-icon">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://wa.me/25765980190" target="_blank" class="contact-icon">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+  <div class="term-block">
+    <p class="footer-name">Muslim Barut</p>
+
+    <p class="footer-text">
+      Software Engineer Student • Python • Linux • Web Development
+    </p>
+
+    <p class="footer-copy">
+      © 2026 Muslim Barut. All rights reserved.
+    </p>
+
+  </div>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
